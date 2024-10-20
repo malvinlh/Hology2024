@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "New Question", menuName = "Question")]
 public class QuestionSO : ScriptableObject
 {
-    public Sprite image;
+    // public Sprite image;
 
     public string theme;
     public string question;

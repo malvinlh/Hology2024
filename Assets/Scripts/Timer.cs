@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro; // Import the TextMeshPro namespace
+using System; // For Action delegate
 
 public class Timer : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Timer : MonoBehaviour
     private float timeRemaining; // To store the remaining time
     private int currentSecond = 0;  // Current second value
     private bool isTimerActive = false; // A flag to check if the timer is active
+
+    public Action OnTimerEnd; // Event triggered when the timer reaches 0
 
     void Start()
     {
@@ -35,11 +38,11 @@ public class Timer : MonoBehaviour
                 UpdateTimerText();
             }
 
-            // When time reaches 0, you can add additional logic if needed
+            // When time reaches 0, stop the timer and trigger the event
             if (timeRemaining <= 0)
             {
-                // Stop the timer if time runs out
                 isTimerActive = false;
+                OnTimerEnd?.Invoke(); // Invoke the event when the timer ends
             }
         }
     }

@@ -38,6 +38,12 @@ public class CardSpawnManager : MonoBehaviour
     public bool Heart3 = false;
     public bool Heart4 = false;
 
+    public AudioSource correctSFX;
+    public AudioSource wrongSFX;
+    public AudioSource UIButtonSFX;
+    public AudioSource answerButtonSFX;
+    public AudioSource winSFX;
+    public AudioSource gameOverSFX;
 
     void Start()
     {
@@ -113,6 +119,7 @@ public class CardSpawnManager : MonoBehaviour
         {
             // All questions have been answered, show the win panel
             WinPanel.SetActive(true);
+            winSFX.Play();
             card.SetActive(false);
             timer.StopTimer();
             cardZoom.PauseZoom();
@@ -155,6 +162,9 @@ public class CardSpawnManager : MonoBehaviour
             // Mark the answer as correct
             isCorrectAnswer = true;
 
+            // Play the correct SFX
+            correctSFX.Play();
+
             // Stop the timer and reset the zoom
             timer.StopTimer();
 
@@ -167,21 +177,37 @@ public class CardSpawnManager : MonoBehaviour
             {
                 heartIcons[0].SetActive(true);
                 Heart0 = true;
+
+                wrongSFX.Play();
+                uIElementShake.ShakeUIElement();
+                isCorrectAnswer = false;
             }
             else if (Heart1 == false)
             {
                 heartIcons[1].SetActive(true);
                 Heart1 = true;
+
+                wrongSFX.Play();
+                uIElementShake.ShakeUIElement();
+                isCorrectAnswer = false;
             }
             else if (Heart2 == false)
             {
                 heartIcons[2].SetActive(true);
                 Heart2 = true;
+
+                wrongSFX.Play();
+                uIElementShake.ShakeUIElement();
+                isCorrectAnswer = false;
             }
             else if (Heart3 == false)
             {
                 heartIcons[3].SetActive(true);
                 Heart3 = true;
+
+                wrongSFX.Play();
+                uIElementShake.ShakeUIElement();
+                isCorrectAnswer = false;
             }
             else if (Heart4 == false)
             {
@@ -189,11 +215,11 @@ public class CardSpawnManager : MonoBehaviour
                 Heart4 = true;
                 timer.StopTimer();
                 cardZoom.PauseZoom();
+
+                // game over
+                gameOverSFX.Play();
                 losePanel.SetActive(true);
             }
-
-            uIElementShake.ShakeUIElement();
-            isCorrectAnswer = false;
         }
     }
 
@@ -202,38 +228,58 @@ public class CardSpawnManager : MonoBehaviour
     {
         // Mark that the timer ran out
         isTimeUp = true;
+        timer.StopTimer();
+        cardZoom.PauseZoom();
 
         if (Heart0 == false)
         {
             heartIcons[0].SetActive(true);
             Heart0 = true;
+
+            wrongSFX.Play();
+
+            // Reset the zoom and proceed to the next question
+            StartCoroutine(PrepareNextQuestion());
         }
         else if (Heart1 == false)
         {
             heartIcons[1].SetActive(true);
             Heart1 = true;
+
+            wrongSFX.Play();
+
+            // Reset the zoom and proceed to the next question
+            StartCoroutine(PrepareNextQuestion());
         }
         else if (Heart2 == false)
         {
             heartIcons[2].SetActive(true);
             Heart2 = true;
+            
+            wrongSFX.Play();
+
+            // Reset the zoom and proceed to the next question
+            StartCoroutine(PrepareNextQuestion());
         }
         else if (Heart3 == false)
         {
             heartIcons[3].SetActive(true);
             Heart3 = true;
+
+            wrongSFX.Play();
+
+            // Reset the zoom and proceed to the next question
+            StartCoroutine(PrepareNextQuestion());
         }
         else if (Heart4 == false)
         {
             heartIcons[4].SetActive(true);
             Heart4 = true;
-            timer.StopTimer();
-            cardZoom.PauseZoom();
+
+            // game over
+            gameOverSFX.Play();
             losePanel.SetActive(true);
         }
-
-        // Reset the zoom and proceed to the next question
-        StartCoroutine(PrepareNextQuestion());
     }
 
     // Coroutine to prepare for the next question and blink the CorrectIcon or WrongIcon if needed

@@ -12,6 +12,9 @@ public class CardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     private bool isCardClicked = false;  // Flag to track if the card is clicked
 
+    public AudioSource UIButtonSFX;
+    public AudioSource answerButtonSFX;
+
     void Start()
     {
         // Ensure the outline is initially disabled (no border)
@@ -56,6 +59,7 @@ public class CardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         // Enable the Confirmation Panel when the card is clicked
         if (confirmationPanel != null)
         {
+            UIButtonSFX.Play();
             confirmationPanel.SetActive(true);
             isCardClicked = true;
         }
@@ -66,6 +70,8 @@ public class CardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         if (isCardClicked && !string.IsNullOrEmpty(sceneToLoad))
         {
+            answerButtonSFX.Play();
+            
             // Load the appropriate scene based on the card that was clicked
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
         }
@@ -77,6 +83,7 @@ public class CardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         // Simply hide the confirmation panel if the player clicks "No"
         if (confirmationPanel != null)
         {
+            answerButtonSFX.Play();
             confirmationPanel.SetActive(false);
             isCardClicked = false;
         }

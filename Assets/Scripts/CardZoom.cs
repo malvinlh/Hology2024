@@ -4,7 +4,7 @@ public class CardZoom : MonoBehaviour
 {
     public RectTransform cardTransform; // Reference to the card's RectTransform
     public Vector2 targetSize = new Vector2(0, 0); // Target size (0x0)
-    public float zoomDuration = 10f; // Duration for the zoom to complete (in seconds)
+    public float zoomDuration = 5f; // Duration for the zoom to complete (in seconds)
 
     public Vector2 initialSize;
     private float timer = 0f;

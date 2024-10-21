@@ -4705,7 +4705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardTransform: {fileID: 1588060192}
   targetSize: {x: 0, y: 0}
-  zoomDuration: 10
+  zoomDuration: 5
   initialSize: {x: 1920, y: 1080}
 --- !u!114 &1588060194
 MonoBehaviour:

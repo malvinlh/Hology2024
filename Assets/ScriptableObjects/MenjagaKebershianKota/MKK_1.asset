@@ -15,6 +15,6 @@ MonoBehaviour:
   theme: 'Tema: Menjaga Kebersihan Kota'
   question: Di jalan, Anda melihat sampah berserakan. Apa yang harus dilakukan?
   options:
-  - Mengambil sampah dan membuangnya di tempat yang benar
   - Mengabaikannya
-  correctOptionIndex: 0
+  - Mengambil sampah dan membuangnya di tempat yang benar
+  correctOptionIndex: 1

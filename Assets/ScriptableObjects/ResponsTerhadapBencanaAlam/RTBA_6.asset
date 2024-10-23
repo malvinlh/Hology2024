@@ -17,5 +17,5 @@ MonoBehaviour:
     yang harus dilakukan?
   options:
   - Memberikan pertolongan pertama
-  - Membawanya segera ke rumah sakit terdekat
+  - Menunggu bantuan dari rumah sakit terdekat
   correctOptionIndex: 0

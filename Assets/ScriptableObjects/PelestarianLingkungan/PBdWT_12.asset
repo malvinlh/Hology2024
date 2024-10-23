@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_14
+  m_Name: PBdWT_12
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Anda diminta membantu mengorganisir pameran seni tradisional. Apa yang
-    akan Anda lakukan?
+  question: Apa dampak positif penghijauan terhadap komunitas masyarakat?
   options:
-  - Membuat pameran lebih interaktif untuk menarik minat
-  - Mengadakan pameran secara konvensional
+  - Meningkatkan solidaritas dan kerja sama dalam melestarikan lingkungan
+  - Membuat warga desa tidak saling berinteraksi
   correctOptionIndex: 0

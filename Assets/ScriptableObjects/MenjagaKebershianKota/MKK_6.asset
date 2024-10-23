@@ -15,6 +15,6 @@ MonoBehaviour:
   theme: 'Tema: Menjaga Kebersihan Kota'
   question: Ada polusi udara dari kendaraan bermotor. Apa yang bisa Anda lakukan?
   options:
-  - Menggunakan transportasi umum
   - Tetap menggunakan kendaraan pribadi
-  correctOptionIndex: 0
+  - Menggunakan transportasi umum
+  correctOptionIndex: 1

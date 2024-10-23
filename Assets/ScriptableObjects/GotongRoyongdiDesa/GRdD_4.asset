@@ -16,5 +16,5 @@ MonoBehaviour:
   question: Saat menanam padi, bagaimana agar pekerjaan cepat selesai?
   options:
   - Membagi tugas sesuai keahlian
-  - Bekerja lebih cepat
+  - Meminta hanya satu orang yang mengerjakan
   correctOptionIndex: 0

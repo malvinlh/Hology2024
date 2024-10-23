@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_9
+  m_Name: PBdWT_5
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Sebuah museum lokal tentang sejarah suku hampir ditutup karena kekurangan
-    dana. Apa langkah yang seharusnya diambil?
+  question: Bagaimana kegiatan penghijauan dapat berkontribusi terhadap kualitas
+    hidup masyarakat?
   options:
-  - Menggalang donasi untuk mendukung museum
-  - Membiarkannya ditutup karena minim pengunjung
+  - Menambah udara segar dan menciptakan lingkungan yang lebih sehat
+  - Mengurangi ruang untuk pembangunan
   correctOptionIndex: 0

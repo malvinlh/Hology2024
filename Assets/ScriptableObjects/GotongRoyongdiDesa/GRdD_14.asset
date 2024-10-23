@@ -15,6 +15,6 @@ MonoBehaviour:
   theme: 'Tema: Gotong Royong di Desa'
   question: Seorang warga tidak mau ikut gotong royong. Bagaimana Anda membujuknya?
   options:
-  - Memintanya dengan sopan
+  - Mengajaknya dengan sopan
   - Mengajak warga lain menjauhinya
   correctOptionIndex: 0

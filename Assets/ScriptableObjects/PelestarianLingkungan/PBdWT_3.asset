@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_7
+  m_Name: PBdWT_3
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Upacara adat sering terganggu oleh pembangunan modern di sekitar. Bagaimana
-    sebaiknya menyikapinya?
+  question: Bagaimana kegiatan menanam pohon dapat mencegah bencana alam seperti
+    banjir atau tanah longsor?
   options:
-  - Mengajukan pembatasan pembangunan di dekat lokasi adat
-  - Membiarkan pembangunan berlanjut
+  - Akar pohon membantu menyerap air dan menahan tanah
+  - Menanam pohon membuat tanah menjadi lebih licin
   correctOptionIndex: 0

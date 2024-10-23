@@ -16,6 +16,6 @@ MonoBehaviour:
   question: Saat banjir melanda, seorang warga terjebak di atap rumah. Apa langkah
     terbaik yang harus dilakukan?
   options:
-  - Mencari perahu atau alat bantu untuk menyelamatkannya
-  - Menghubungi tim penyelamat
+  - Mencari alat bantu untuk menyelamatkannya
+  - Meninggalkannya
   correctOptionIndex: 0

@@ -15,6 +15,6 @@ MonoBehaviour:
   theme: 'Tema: Menjaga Kebersihan Kota'
   question: Di lingkungan Anda, orang membakar sampah plastik. Apa yang Anda lakukan?
   options:
-  - Menyarankan cara lain yang lebih ramah lingkungan
   - Membiarkannya
-  correctOptionIndex: 0
+  - Menyarankan cara lain yang lebih ramah lingkungan
+  correctOptionIndex: 1

@@ -17,4 +17,4 @@ MonoBehaviour:
   options:
   - Memberikan waktu istirahat sejenak
   - Meminta mereka terus bekerja
-  correctOptionIndex: 1
+  correctOptionIndex: 0

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_11
+  m_Name: PBdWT_4
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Salah satu tradisi lokal mulai dilupakan oleh generasi muda. Apa yang
-    dapat Anda lakukan?
+  question: Apa langkah selanjutnya setelah pohon ditanam untuk memastikan pertumbuhannya?
   options:
-  - Mempromosikan tradisi di sekolah dan komunitas
-  - Tidak peduli karena tradisi tersebut kuno
-  correctOptionIndex: 0
+  - Membiarkan pohon tumbuh tanpa perawatan
+  - Merawat dengan menyiram dan memastikan pohon mendapatkan sinar matahari yang
+    cukup
+  correctOptionIndex: 1

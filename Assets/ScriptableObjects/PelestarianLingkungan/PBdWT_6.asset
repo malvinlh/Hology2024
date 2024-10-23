@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_3
+  m_Name: PBdWT_6
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Beberapa warga desa ingin menggantikan tarian tradisional dengan acara
-    modern. Bagaimana sikap Anda?
+  question: Apa yang harus dilakukan jika tanaman yang baru ditanam mulai layu?
   options:
-  - Mempertahankan tarian tradisional sebagai warisan budaya
-  - Mengizinkan perubahan sesuai tren modern
-  correctOptionIndex: 0
+  - Mengabaikannya karena tanaman tersebut tidak kuat
+  - Menyiram lebih sering dan memeriksa kondisi tanah
+  correctOptionIndex: 1

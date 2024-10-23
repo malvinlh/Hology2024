@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GRdD_2
   m_EditorClassIdentifier: 
   theme: 'Tema: Gotong Royong di Desa'
-  question: Anda ditugaskan untuk membersihkan sawah. Apa yang harus dilakukan pertama
+  question: Anda ditugaskan untuk membajak sawah. Apa yang harus dilakukan pertama
     kali?
   options:
   - Memeriksa kondisi tanah

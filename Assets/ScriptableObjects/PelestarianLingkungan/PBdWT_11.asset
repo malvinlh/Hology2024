@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_1
+  m_Name: PBdWT_11
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Situs budaya lokal sedang dalam bahaya rusak. Apa yang harus Anda lakukan?
+  question: Bagaimana penghijauan dapat membantu mencegah polusi udara di daerah
+    pedesaan dan perkotaan?
   options:
-  - Membuat petisi untuk perlindungan situs tersebut
-  - Membiarkannya rusak karena modernisasi
+  - Pohon menyerap polutan dan menghasilkan oksigen yang lebih bersih
+  - Pohon menghasilkan debu yang menyebabkan polusi lebih parah
   correctOptionIndex: 0

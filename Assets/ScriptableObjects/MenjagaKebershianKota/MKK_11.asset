@@ -16,6 +16,6 @@ MonoBehaviour:
   question: Kampanye pemilahan sampah di lingkungan Anda sedang berlangsung. Apa
     yang harus Anda lakukan?
   options:
-  - Memisahkan sampah organik dan nonorganik di rumah
   - Membuang semua sampah di satu tempat
-  correctOptionIndex: 0
+  - Memisahkan sampah organik dan nonorganik di rumah
+  correctOptionIndex: 1

@@ -16,6 +16,6 @@ MonoBehaviour:
   question: Pekerjaan hampir selesai, tetapi ada warga yang ingin pulang lebih awal.
     Apa tindakan Anda?
   options:
-  - Mengizinkan warga pulang
-  - Memintanya tetap bekerja hingga selesai
+  - Marah kepada warga tersebut
+  - Menanyakan alasan mengapa ingin pulang
   correctOptionIndex: 1

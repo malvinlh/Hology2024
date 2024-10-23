@@ -15,6 +15,6 @@ MonoBehaviour:
   theme: 'Tema: Menjaga Kebersihan Kota'
   question: Program daur ulang baru diadakan di kota. Apa yang akan Anda lakukan?
   options:
-  - Mengikuti program daur ulang
   - Menganggapnya tidak penting
-  correctOptionIndex: 0
+  - Mengikuti program daur ulang
+  correctOptionIndex: 1

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_4
+  m_Name: PBdWT_15
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Anda diminta memilih antara mendanai pelestarian seni batik atau pengembangan
-    teknologi baru di desa. Apa yang Anda pilih?
+  question: Jika desa mulai mengalami masalah lingkungan seperti kekurangan air atau
+    erosi tanah, apa yang bisa dilakukan oleh warga untuk membantu mengatasinya?
   options:
-  - Pelestarian seni batik
-  - Pengembangan teknologi
+  - Menanam lebih banyak pohon di area yang rawan erosi
+  - Membiarkan masalah tersebut tanpa tindakan
   correctOptionIndex: 0

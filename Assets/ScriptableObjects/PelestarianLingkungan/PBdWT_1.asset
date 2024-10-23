@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_10
+  m_Name: PBdWT_1
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Anda mendengar rencana membangun pusat perbelanjaan di atas tanah bersejarah.
-    Apa pendapat Anda?
+  question: Mengapa penting bagi masyarakat desa untuk menanam pohon secara rutin?
   options:
-  - Menolak rencana tersebut
-  - Mendukung demi perkembangan ekonomi
-  correctOptionIndex: 0
+  - Untuk memperindah desa
+  - Untuk menjaga keseimbangan lingkungan dan mencegah erosi
+  correctOptionIndex: 1

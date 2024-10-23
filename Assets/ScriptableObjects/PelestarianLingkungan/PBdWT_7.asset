@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_2
+  m_Name: PBdWT_7
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Ada festival budaya yang hampir punah di desa Anda. Apa yang sebaiknya
-    Anda lakukan?
+  question: Mengapa penting untuk memilih jenis pohon yang tepat saat melakukan kegiatan
+    penghijauan?
   options:
-  - Menggalang dana untuk mendukung festival tersebut
-  - Mengabaikan karena tidak relevan lagi
+  - Agar pohon dapat tumbuh dengan baik di kondisi tanah dan iklim setempat
+  - Agar pohon bisa ditebang segera setelah ditanam
   correctOptionIndex: 0

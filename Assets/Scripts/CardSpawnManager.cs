@@ -295,6 +295,9 @@ public class CardSpawnManager : MonoBehaviour
         // Hide the current QuestionPanel while preparing for the next question
         QuestionPanel.SetActive(false);
 
+        // Disable all option buttons before the blinking starts
+        SetOptionButtonsInteractable(false);
+
         // If the last answer was correct, blink the CorrectIcon twice
         if (isCorrectAnswer)
         {
@@ -312,11 +315,14 @@ public class CardSpawnManager : MonoBehaviour
         // Increment the question index
         currentQuestionIndex++;
 
+        // Enable the option buttons again after the blinking stops
+        SetOptionButtonsInteractable(true);
+
         // Show the next question
         StartCoroutine(ShowQuestionPanel());
     }
 
-    // Coroutine to blink the CorrectIcon twice
+    // Method to blink the CorrectIcon twice
     IEnumerator BlinkCorrectIcon()
     {
         for (int i = 0; i < 2; i++)
@@ -328,7 +334,7 @@ public class CardSpawnManager : MonoBehaviour
         }
     }
 
-    // Coroutine to blink the WrongIcon twice
+    // Method to blink the WrongIcon twice
     IEnumerator BlinkWrongIcon()
     {
         for (int i = 0; i < 2; i++)
@@ -337,6 +343,15 @@ public class CardSpawnManager : MonoBehaviour
             yield return new WaitForSeconds(0.5f); // Wait for half a second
             WrongIcon.SetActive(false); // Hide the icon
             yield return new WaitForSeconds(0.5f); // Wait for another half a second
+        }
+    }
+
+    // Method to enable or disable the option buttons
+    void SetOptionButtonsInteractable(bool interactable)
+    {
+        foreach (Button button in optionButtons)
+        {
+            button.interactable = interactable;
         }
     }
 }

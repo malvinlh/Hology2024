@@ -15,6 +15,6 @@ MonoBehaviour:
   theme: 'Tema: Gotong Royong di Desa'
   question: Bagaimana Anda menunjukkan rasa terima kasih kepada warga di akhir kegiatan?
   options:
-  - Mengadakan syukuran
+  - Mengadakan syukuran besar-besaran
   - Memberikan ucapan terima kasih
   correctOptionIndex: 1

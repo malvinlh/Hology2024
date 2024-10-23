@@ -16,5 +16,5 @@ MonoBehaviour:
   question: Ada kebakaran hutan mendekati pemukiman. Apa yang harus dilakukan?
   options:
   - Menghubungi dinas pemadam kebakaran
-  - Mengajak warga segera mengungsi ke tempat aman
+  - Segera mengungsi ke tempat aman sendirian
   correctOptionIndex: 0

@@ -16,5 +16,5 @@ MonoBehaviour:
   question: Salah satu alat bangunan rusak. Apa tindakan yang tepat?
   options:
   - Meminjam alat dari warga lain
-  - Menggunakan alat seadanya
+  - Mengambil alat dari desa lain
   correctOptionIndex: 0

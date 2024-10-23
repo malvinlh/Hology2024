@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_13
+  m_Name: PBdWT_9
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: Pengunjung sering tidak menghormati situs budaya. Apa yang bisa dilakukan?
+  question: Apa dampak jangka panjang jika kegiatan penghijauan tidak dilakukan di
+    desa?
   options:
-  - Membuat aturan ketat tentang perilaku pengunjung
-  - Membiarkan pengunjung berperilaku bebas
-  correctOptionIndex: 0
+  - Desa tetap hijau dan sehat
+  - Desa menjadi gersang dan rentan terhadap erosi
+  correctOptionIndex: 1

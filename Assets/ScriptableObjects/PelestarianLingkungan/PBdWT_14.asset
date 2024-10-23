@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d7daef387b4d6b42b2fddd08e75527e, type: 3}
-  m_Name: PBdWT_6
+  m_Name: PBdWT_14
   m_EditorClassIdentifier: 
   theme: 'Tema: Pelestarian Budaya dan Warisan Tradisional'
-  question: 'Festival tradisional sedang diadakan, tetapi minat masyarakat rendah.
-    Apa yang harus Anda lakukan? '
+  question: Bagaimana cara menjaga keberlangsungan program penghijauan agar tetap
+    berjalan di masa mendatang?
   options:
-  - Menggalang kampanye untuk meningkatkan partisipasi
-  - Membiarkan festival berjalan dengan peserta minimal
+  - Mengadakan kegiatan penghijauan secara rutin dan melibatkan lebih banyak orang
+  - Melakukan kegiatan sekali saja dan tidak mengulangnya
   correctOptionIndex: 0

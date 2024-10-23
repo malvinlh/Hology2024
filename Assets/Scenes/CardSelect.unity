@@ -609,7 +609,6 @@ GameObject:
   - component: {fileID: 407069347}
   - component: {fileID: 407069345}
   - component: {fileID: 407069348}
-  - component: {fileID: 407069349}
   m_Layer: 5
   m_Name: Card3
   m_TagString: Untagged
@@ -709,22 +708,6 @@ MonoBehaviour:
   sceneToLoad: Gameplay3
   UIButtonSFX: {fileID: 1821351150}
   answerButtonSFX: {fileID: 654724336}
---- !u!114 &407069349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407069342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8bcd1a2a3ae0c4ab944fac7c04324b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontSide: {fileID: 331582666}
-  backSide: {fileID: 1130116261}
-  flipDuration: 0.5
-  isShowingFront: 1
 --- !u!1 &467706269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1373,7 @@ GameObject:
   - component: {fileID: 1102234260}
   - component: {fileID: 1102234259}
   - component: {fileID: 1102234258}
+  - component: {fileID: 1102234261}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1471,6 +1455,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1102234261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102234257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1130116261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,7 +1827,6 @@ GameObject:
   - component: {fileID: 1253528141}
   - component: {fileID: 1253528139}
   - component: {fileID: 1253528142}
-  - component: {fileID: 1253528143}
   m_Layer: 5
   m_Name: Card4
   m_TagString: Untagged
@@ -1899,22 +1926,6 @@ MonoBehaviour:
   sceneToLoad: Gameplay4
   UIButtonSFX: {fileID: 1821351150}
   answerButtonSFX: {fileID: 654724336}
---- !u!114 &1253528143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253528136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8bcd1a2a3ae0c4ab944fac7c04324b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontSide: {fileID: 467706269}
-  backSide: {fileID: 1291635280}
-  flipDuration: 0.5
-  isShowingFront: 1
 --- !u!1 &1291635280
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,11 +2047,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cards:
-  - {fileID: 1759763644}
-  - {fileID: 1674408592}
-  - {fileID: 407069349}
-  - {fileID: 1253528143}
-  - {fileID: 1670821865}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &1305264744
 Transform:
   m_ObjectHideFlags: 0
@@ -2792,7 +2803,6 @@ GameObject:
   - component: {fileID: 1670821863}
   - component: {fileID: 1670821861}
   - component: {fileID: 1670821864}
-  - component: {fileID: 1670821865}
   m_Layer: 5
   m_Name: Card5
   m_TagString: Untagged
@@ -2892,22 +2902,6 @@ MonoBehaviour:
   sceneToLoad: Gameplay5
   UIButtonSFX: {fileID: 1821351150}
   answerButtonSFX: {fileID: 654724336}
---- !u!114 &1670821865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670821858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8bcd1a2a3ae0c4ab944fac7c04324b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontSide: {fileID: 1465968098}
-  backSide: {fileID: 1225939674}
-  flipDuration: 0.5
-  isShowingFront: 1
 --- !u!1 &1674408585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,7 +2914,6 @@ GameObject:
   - component: {fileID: 1674408590}
   - component: {fileID: 1674408588}
   - component: {fileID: 1674408591}
-  - component: {fileID: 1674408592}
   m_Layer: 5
   m_Name: Card2
   m_TagString: Untagged
@@ -3020,22 +3013,6 @@ MonoBehaviour:
   sceneToLoad: Gameplay2
   UIButtonSFX: {fileID: 1821351150}
   answerButtonSFX: {fileID: 654724336}
---- !u!114 &1674408592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674408585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8bcd1a2a3ae0c4ab944fac7c04324b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontSide: {fileID: 1321005011}
-  backSide: {fileID: 1091997458}
-  flipDuration: 0.5
-  isShowingFront: 1
 --- !u!1 &1723830158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,7 +3206,6 @@ GameObject:
   - component: {fileID: 1759763639}
   - component: {fileID: 1759763642}
   - component: {fileID: 1759763643}
-  - component: {fileID: 1759763644}
   m_Layer: 5
   m_Name: Card1
   m_TagString: Untagged
@@ -3329,22 +3305,6 @@ MonoBehaviour:
   sceneToLoad: Gameplay1
   UIButtonSFX: {fileID: 1821351150}
   answerButtonSFX: {fileID: 654724336}
---- !u!114 &1759763644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759763637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad8bcd1a2a3ae0c4ab944fac7c04324b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontSide: {fileID: 173262314}
-  backSide: {fileID: 1409623681}
-  flipDuration: 0.5
-  isShowingFront: 1
 --- !u!1 &1821351148
 GameObject:
   m_ObjectHideFlags: 0

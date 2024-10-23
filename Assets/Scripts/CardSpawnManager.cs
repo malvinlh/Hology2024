@@ -120,6 +120,7 @@ public class CardSpawnManager : MonoBehaviour
             // All questions have been answered, show the win panel
             WinPanel.SetActive(true);
             winSFX.Play();
+            gameplayManager.OnLevelComplete();
             card.SetActive(false);
             timer.StopTimer();
             cardZoom.PauseZoom();

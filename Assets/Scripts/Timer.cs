@@ -1,6 +1,6 @@
 using UnityEngine;
-using TMPro; // Import the TextMeshPro namespace
-using System; // For Action delegate
+using TMPro;
+using System;
 
 public class Timer : MonoBehaviour
 {
@@ -10,11 +10,12 @@ public class Timer : MonoBehaviour
     private int currentSecond = 0;  // Current second value
     private bool isTimerActive = false; // A flag to check if the timer is active
 
+    public AudioSource timerMusic;  // Reference to the AudioSource for timer music
     public Action OnTimerEnd; // Event triggered when the timer reaches 0
 
     void Start()
     {
-        // Start the timer when the game begins
+        // Initialize and start the timer
         ResetTimer();
     }
 
@@ -41,7 +42,7 @@ public class Timer : MonoBehaviour
             // When time reaches 0, stop the timer and trigger the event
             if (timeRemaining <= 0)
             {
-                isTimerActive = false;
+                StopTimer(); // Stop the timer when it reaches zero
                 OnTimerEnd?.Invoke(); // Invoke the event when the timer ends
             }
         }
@@ -55,12 +56,24 @@ public class Timer : MonoBehaviour
         currentSecond = Mathf.CeilToInt(timeRemaining);
         isTimerActive = true;
         UpdateTimerText();
+
+        // Start playing the timer music
+        if (timerMusic != null)
+        {
+            timerMusic.Play();
+        }
     }
 
-    // Stop the timer when the correct option is selected
+    // Stop the timer and stop the music when the correct option is selected or timer ends
     public void StopTimer()
     {
         isTimerActive = false;
+
+        // Stop the timer music when the timer is stopped
+        if (timerMusic != null)
+        {
+            timerMusic.Stop();
+        }
     }
 
     // Update the TextMeshPro text with the format "x detik"

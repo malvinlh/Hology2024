@@ -44,6 +44,7 @@ public class CardSpawnManager : MonoBehaviour
     public AudioSource answerButtonSFX;
     public AudioSource winSFX;
     public AudioSource gameOverSFX;
+    public AudioSource notifSFX;
 
     void Start()
     {
@@ -101,6 +102,7 @@ public class CardSpawnManager : MonoBehaviour
             // Enable the QuestionPanel and card
             QuestionPanel.SetActive(true);
             card.SetActive(true);
+            notifSFX.Play();
 
             // Update UI elements with the question details
             UpdateQuestionUI();
@@ -119,6 +121,7 @@ public class CardSpawnManager : MonoBehaviour
         {
             // All questions have been answered, show the win panel
             WinPanel.SetActive(true);
+            gameplayManager.OnLevelComplete();
             winSFX.Play();
             gameplayManager.OnLevelComplete();
             card.SetActive(false);

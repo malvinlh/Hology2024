@@ -464,7 +464,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: MULAI
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a37ded631903e14a8483e8a8b23fb83, type: 2}
   m_sharedMaterial: {fileID: -1573486844307580876, guid: 0a37ded631903e14a8483e8a8b23fb83, type: 2}
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT
+  m_text: KELUAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a37ded631903e14a8483e8a8b23fb83, type: 2}
   m_sharedMaterial: {fileID: -1573486844307580876, guid: 0a37ded631903e14a8483e8a8b23fb83, type: 2}
@@ -1155,7 +1155,6 @@ RectTransform:
   - {fileID: 192210712}
   - {fileID: 2103874037}
   - {fileID: 1834916222}
-  - {fileID: 7842052836815838633}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1587,7 +1586,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1625400883}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 268618239465169631, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
       propertyPath: m_Pivot.x
@@ -1639,23 +1638,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 268618239465169631, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 268618239465169631, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 268618239465169631, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 268618239465169631, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 268618239465169631, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 268618239465169631, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1678,11 +1677,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
---- !u!224 &7842052836815838633 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 268618239465169631, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
-  m_PrefabInstance: {fileID: 7842052836815838632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7842052836815838634 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -592620999468400984, guid: a08f4701709a0f24e815ed9387191ead, type: 3}
@@ -1703,3 +1697,4 @@ SceneRoots:
   - {fileID: 1482650549}
   - {fileID: 503601472}
   - {fileID: 1353517435}
+  - {fileID: 7842052836815838632}

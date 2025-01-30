@@ -1,3 +1,3 @@
-# hology2024
+# Hology 2024
 
-### pake Unity 2022.3.22.f1
+GitHub repository dedicated to the 2024 Hology competition, hosted by Brawijaya University, Indonesia.
